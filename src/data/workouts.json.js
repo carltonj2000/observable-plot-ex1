@@ -31,10 +31,12 @@ workoutJson.forEach((line, lineNo) => {
   }
 });
 
+const exerciseTotals = exercises.map((e) => ({ ...e, total: e.dates.length }));
+
 process.stdout.write(
   JSON.stringify({
     workouts: date2lineNumber.length,
-    exercises,
+    exerciseTotals,
     date2lineNumber,
   })
 );
