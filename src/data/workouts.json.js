@@ -1,4 +1,3 @@
-import { error } from "console";
 import { tsvParse } from "d3-dsv";
 import fs from "fs";
 
