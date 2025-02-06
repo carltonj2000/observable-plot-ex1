@@ -9,11 +9,11 @@ Refer to the `old` directory for usefully code snippets.
 - [Plot JS code in a markdown file](ex1)
 - [Plot JS code imported into a markdown file](ex2)
 
-## Carlton's Workouts
+## Carlton's Workout Totals For 2024
 
 ```js
 const workouts = await FileAttachment("data/workouts.json").json();
-display(workouts);
+// display(workouts);
 ```
 
 ```js
