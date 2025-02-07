@@ -13,10 +13,11 @@ Refer to the `old` directory for usefully code snippets.
 
 ```js
 const workouts = await FileAttachment("data/workouts.json").json();
-// display(workouts);
+display(workouts);
 ```
 
 ```js
-import { iWorkout } from "./components/index.js";
+import { iWorkout, iWorkoutDays } from "./components/index.js";
 display(iWorkout(workouts.exerciseTotals));
+display(iWorkoutDays(workouts.date2lineNumber));
 ```

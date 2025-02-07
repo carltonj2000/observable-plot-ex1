@@ -23,7 +23,7 @@ workoutJson.forEach((line, lineNo) => {
   if (/\d{1,2}\/\d{1,2}\/\d{2}/.test(date)) {
     const exercise = workoutJson[lineNo - 1].Groups;
     if (date.split("/")[2] !== "24") return;
-    date2lineNumber.push({ date, lineNo, exercise });
+    date2lineNumber.push({ date: new Date(date), lineNo, exercise, value: 1 });
     const exerciseIndex = exercises.findIndex((e) => e.exercise === exercise);
     if (exerciseIndex === -1) exercises.push({ exercise, dates: [date] });
     else exercises[exerciseIndex].dates.push(date);
